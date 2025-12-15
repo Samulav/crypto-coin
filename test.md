@@ -1,7 +1,7 @@
 # Assignment: Computational Finance
 
 **Names:** Samuel Lavalaye, Wouter van der Heide, Nicolas Wolniewicz
-**Student Numbers:** [ID 1], [ID 2], u2120794
+**Student Numbers:** u2170874, u2168825, u2120794
 
 ---
 
