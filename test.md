@@ -90,6 +90,8 @@ After simulating this weekly delta-hedging strategy over 2000 scenarios, we get 
 | **5% Quantile** | -4,624.27 |
 | **95% Quantile** | 4,228.20 |
 
+A plot of the different quantiles of portfolio value over time has been added a seperate image to this assignment. 
+
 ### 3c Risk Premium
 
 
