@@ -59,7 +59,7 @@ Pricing path-dependent options like the Asian option presents unique challenges 
 
 **Assumptions**: We work in a Black-Scholes market with parameters: mu=9%, sigma=20%, r=2%, S_0 = 100, B_0 = 1. A financial instution sells 2000 Euopean digital call options. The institution wants to hedge the associated risk using a discrete-time delta hedging strategy on a weekly rebalancing grid. The position in the money market account is adjusted to ensure the portfolio is self financing. The initial capital is the premium received from selling the options.
 
-### 3a
+### 3a Initial Positions
 
 The initial digital call price can be calculated with the following formula, which has been derived with the First Fundamental Theorem of Asset Pricing:
 
@@ -79,7 +79,7 @@ Plugging in the correct values and applying budget neutrality results in the fol
 | **Initial Bond Position** | $\psi_0$ | $-22,817.6162$ |
 
 
-### 3b
+### 3b Simulation Results
 
 After simulating this weekly delta-hedging strategy over 2000 scenarios, we get the following plot and statistics for Profit and Loss (PnL). 
 
@@ -90,7 +90,7 @@ After simulating this weekly delta-hedging strategy over 2000 scenarios, we get 
 | **5% Quantile** | -4,624.27 |
 | **95% Quantile** | 4,228.20 |
 
-
+### 3c Risk Premium
 
 
 ## Appendix: Python Code
