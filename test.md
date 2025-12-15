@@ -53,6 +53,28 @@ Pricing path-dependent options like the Asian option presents unique challenges 
 ---
 
 ## Question 3: Discrete-Time Hedging and Risk Management
+**Option Parameters**: European Digital Call: S0 = 100, K = 105, T = 1.5.
+**Payoff:** Pays 10 if S_T >= K, else 0.
+**Assumptions**: We work in a Black-Scholes market with parameters: mu=9%, sigma=20%, r=2%, S_0 = 100, B_0 = 1. A financial instution sells 2000 Euopean digital call options. The instituion wants to hedge the associated risk using a discrete-time delta hedging strategy on a weekly rebalancing grid. The position in the money market account is adjusted to ensure the portfolio is self financing. The initial capital is the premium received from selling the options.
+
+### 3a
+
+The initial digital call price can be calculated with the following formula, which has been derived with the First Fundamental Theorem of Asset Pricing.
+
+$$
+\begin{aligned}
+    C_t &= 10  e^{-r(T-t)} N(d_2) \\
+    d_2 &= \frac{\ln(S_t / K) + (r - \frac{1}{2}\sigma^2)(T-t)}{\sigma \sqrt{T-t}}
+\end{aligned}
+$$
+
+| Metric | Symbol | Value |
+| :--- | :---: | :--- |
+| **Digital Call Price ($t=0$)** | $C_0$ | $4.0861$ |
+| **Initial Stock Position** | $\phi_0$ | $309.8991$ |
+| **Initial Bond Position** | $\psi_0$ | $-22,817.6162$ |
+
+
 
 
 
