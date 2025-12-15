@@ -59,14 +59,16 @@ Pricing path-dependent options like the Asian option presents unique challenges 
 
 ### 3a
 
-The initial digital call price can be calculated with the following formula, which has been derived with the First Fundamental Theorem of Asset Pricing.
+The initial digital call price can be calculated with the following formula, which has been derived with the First Fundamental Theorem of Asset Pricing:
 
 $$
 \begin{aligned}
     C_t &= 10  e^{-r(T-t)} N(d_2) \\
-    d_2 &= \frac{\ln(S_t / K) + (r - \frac{1}{2}\sigma^2)(T-t)}{\sigma \sqrt{T-t}}
+    d_2 &= \frac{\ln(S_t / K) + (r - \frac{1}{2}\sigma^2)(T-t)}{\sigma \sqrt{T-t}}.
 \end{aligned}
 $$
+
+Plugging in the correct values and applying budget neutrality results in the following numbers.
 
 | Metric | Symbol | Value |
 | :--- | :---: | :--- |
