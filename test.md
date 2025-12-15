@@ -98,9 +98,8 @@ In our results we we see that the average PnL of our strategy is almost equal to
 We can calculate the Value at Risk (VaR). We look at the 95% VaR, which is a measure of the magnitude of the loss at the 5% quantile of our P&L distribtuion. From our simulation results, the 5% quantile is approximately -4624. This means that in 95% of market scenarios, the totall loss (hedging error) will not exceed 4624.
 
 To protect against these 'normal' hedging errors, we propose charging this 95% VaR as an additional risk premium. This would mean that the customer covers the risk for 95% of market scenarios. We can calculate the premium per option.
-
 $$
-\text{Risk Premium per OPtion} = \frac{\text{VaR}_{95\%}}{N_{\text{options}}} \approx \text{EUR } 2.31
+\text{Risk Premium} = \frac{\text{VaR}_{95\%}}{N_{\text{options}}} = \frac{4624.27}{2000} \approx \text{EUR } 2.31
 $$
 
 ## Appendix: Python Code
