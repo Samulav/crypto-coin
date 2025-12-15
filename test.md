@@ -52,7 +52,10 @@ Pricing path-dependent options like the Asian option presents unique challenges 
 
 ---
 
-## Question 3
+## Question 3: Discrete-Time Hedging and Risk Management
+
+
+
 
 ## Appendix: Python Code
 
