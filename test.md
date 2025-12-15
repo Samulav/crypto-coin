@@ -103,7 +103,7 @@ $$
 \text{Risk Premium per Option} = \frac{\text{VaR}}{N_{options}} = \frac{4624.27}{2000} \approx \text{EUR } 2.31
 $$
 
-### 3d Different rebalancing frequencies.
+### 3d Different Rebalancing Frequencies.
 Changing the rebalancing frequency impact the hedging effectiveness. We can for example change the rebalancing frequency to daily and monthly. The differences in Profit and Losses distribution can be seen in the table below.
 
 | Statistic | Monthly Rebalancing | Daily Rebalancing |
@@ -114,6 +114,10 @@ Changing the rebalancing frequency impact the hedging effectiveness. We can for 
 | **95% Quantile** | 4,228.20 | 1,994.91 |
 | **95% VaR (Total)** | 4,624.27 | 1,802.37 |
 | **Risk Premium (Per Option)** | **2.31** | **0.90** |
+
+When comparing this table with the table for a weekly rebalancing scheme, it can be seen that increasing the rabalancing frequency increases the hedging effectiveniss. The standard deviation in PnL drops by ~37% when switching from montly to daily. The VaR drops and the risk premium drops from 2.31EUR to 0.90EUR, making the product more viable in the real world. 
+
+### 3e 
 
 ## Appendix: Python Code
 
