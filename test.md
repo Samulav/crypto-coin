@@ -100,7 +100,7 @@ We can calculate the Value at Risk (VaR). We look at the 95% VaR, which is a mea
 To protect against these 'normal' hedging errors, we propose charging this 95% VaR as an additional risk premium. This would mean that the customer covers the risk for 95% of market scenarios. We can calculate the premium per option.
 
 $$
-\text{Risk Premium} = \frac{VaR}{N_{options}} = \frac{4624.27}{2000} \approx \text{EUR } 2.31
+\text{Risk Premium} = \frac{\text{VaR}}{N_{options}} = \frac{4624.27}{2000} \approx \text{EUR } 2.31
 $$
 
 ## Appendix: Python Code
