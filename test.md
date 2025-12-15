@@ -79,6 +79,16 @@ Plugging in the correct values and applying budget neutrality results in the fol
 | **Initial Bond Position** | $\psi_0$ | $-22,817.6162$ |
 
 
+### 3b
+
+After simulating this weekly delta-hedging strategy over 2000 scenarios, we get the following plot and statistics. 
+
+| Statistic | Value (EUR) |
+| :--- | :--- |
+| **Average PnL** | -51.82 |
+| **Standard Deviation** | 2,827.29 |
+| **5% Quantile** | -4,624.27 |
+| **95% Quantile** | 4,228.20 |
 
 
 
