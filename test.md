@@ -90,14 +90,14 @@ After simulating this weekly delta-hedging strategy over 2000 scenarios, we get 
 | **5% Quantile** | -4,624.27 |
 | **95% Quantile** | 4,228.20 |
 
-A plot of the different quantiles of portfolio value over time has been added a seperate image to this assignment. 
+A plot of the different quantiles of portfolio value over time has been added as a seperate image to this assignment. 
 
 ### 3c Risk Premium
 In our results we we see that the average PnL of our strategy is almost equal to zero. However, we also see that the standard deviation is quite large, and that the 5% quantile lies around -4500 euros. This means that there is a reasably large probability that we lose a large amount of money when using these strategies. This happens because we are following a weekly rebalancing scheme, instead of a continuous scheme. This exposes us to pin risk. To avoid this, we would like to charge a risk premium. 
 
-We can calculate the Value at Risk (VaR). We look at the 95% VaR, which is a measure of the magnitude of the loss at the 5% quantile of our P&L distribtuion. From our simulation results, the 5% quantile is approximately -4624. This means that in 95% of market scenarios, the totall loss (hedging error) will not exceed 4624.
+We can calculate the Value at Risk (VaR). We look at the 95% VaR, which is a measure of the magnitude of the loss at the 5% quantile of our P&L distribtuion. From our simulation results, the 5% quantile is approximately -4624. This means that in 95% of market scenarios, the total loss (hedging error) will not exceed 4624 EUR.
 
-To protect against these 'normal' hedging errors, we propose charging this 95% VaR as an additional risk premium. This would mean that the customer covers the risk for 95% of market scenarios. We can calculate the premium per option.
+To protect against these 'normal' hedging errors, we propose charging this 95% VaR as an additional risk premium. This would mean that the customer covers the risk for 95% of market scenarios. We accept the odd situations (5% of time) where the total hedging error exceed 4624, since they are relatively rare. We can calculate the premium per option.
 
 $$
 \text{Risk Premium per Option} = \frac{\text{VaR}}{N_{options}} = \frac{4624.27}{2000} \approx \text{EUR } 2.31
