@@ -118,6 +118,12 @@ Changing the rebalancing frequency impact the hedging effectiveness. We can for 
 When comparing this table with the table for a weekly rebalancing scheme, it can be seen that increasing the rabalancing frequency increases the hedging effectiveniss. The standard deviation in PnL drops by ~37% when switching from montly to daily. The VaR drops and the risk premium drops from 2.31EUR to 0.90EUR, making the product more viable in the real world. 
 
 ### 3e 
+In a delta-vega hedging strategy we try to manage both fluctuations in stock price and fluctuations in volatility. We can use this put option to create a delta-vega hedging strategy as follows. Since a stock has zero vega, we can use the put option to offset the vega of the binary call option. Then afterwards, since the puts also have their own delta, we can add the stocks to our portfolio to offset the delta of the put and binary call option. Now that we have constructed a delta vega hedging strategy, we can manage the volatility risk of the digital call option. 
+
+An advantage is that we our now protected against (small) changes in both volatility and stock price movements. 
+
+One challenge is that the maturatities are not equal (T=1.5, and T=2). The put option expires after the digital option. This means that after the call option is liquiditated, we are still holding a certain amount of put options. This present additional risk. Also the strike prices (K=95 and K=105) don't agree. This means that for stock prices close to 105, we may have to buy very large amounts of the put option. This could result in additional risk. Finally, to implement this delta-vega hedgin strategy, we need additional transaction. In our Black Scholes model we don't have transaction costs, but in the real world there are transaction costs. This means the delta-vega strategy costs extra money.
+
 
 ## Appendix: Python Code
 
