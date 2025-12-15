@@ -57,7 +57,7 @@ Pricing path-dependent options like the Asian option presents unique challenges 
 
 **Payoff:** Pays 10 if S_T >= K, else 0.
 
-**Assumptions**: We work in a Black-Scholes market with parameters: mu=9%, sigma=20%, r=2%, S_0 = 100, B_0 = 1. A financial instution sells 2000 Euopean digital call options. The instituion wants to hedge the associated risk using a discrete-time delta hedging strategy on a weekly rebalancing grid. The position in the money market account is adjusted to ensure the portfolio is self financing. The initial capital is the premium received from selling the options.
+**Assumptions**: We work in a Black-Scholes market with parameters: mu=9%, sigma=20%, r=2%, S_0 = 100, B_0 = 1. A financial instution sells 2000 Euopean digital call options. The institution wants to hedge the associated risk using a discrete-time delta hedging strategy on a weekly rebalancing grid. The position in the money market account is adjusted to ensure the portfolio is self financing. The initial capital is the premium received from selling the options.
 
 ### 3a
 
