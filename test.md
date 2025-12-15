@@ -65,7 +65,7 @@ The initial digital call price can be calculated with the following formula, whi
 
 $$
 \begin{aligned}
-    C_t &= 10  e^{-r(T-t)} N(d_2) \\
+    C_t &= 10  e^{-r(T-t)} \Phi(d_2) \\
     d_2 &= \frac{\ln(S_t / K) + (r - \frac{1}{2}\sigma^2)(T-t)}{\sigma \sqrt{T-t}}.
 \end{aligned}
 $$
