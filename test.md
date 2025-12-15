@@ -93,7 +93,7 @@ After simulating this weekly delta-hedging strategy over 2000 scenarios, we get 
 A plot of the different quantiles of portfolio value over time has been added as a seperate image to this assignment. 
 
 ### 3c Risk Premium
-In our results we we see that the average PnL of our strategy is almost equal to zero. However, we also see that the standard deviation is quite large, and that the 5% quantile lies around -4500 euros. This means that there is a reasably large probability that we lose a large amount of money when using these strategies. This happens because we are following a weekly rebalancing scheme, instead of a continuous scheme. This exposes us to pin risk. To avoid this, we would like to charge a risk premium. 
+In our results we we see that the average PnL of our strategy is almost equal to zero. However, we also see that the standard deviation is quite large, and that the 5% quantile lies around -4500 euros. This means that there is a reasonably large probability that we lose a large amount of money using this strategy. This happens because we are following a weekly rebalancing scheme, instead of a continuous scheme. This exposes us to pin risk. To avoid this, we would like to charge a risk premium. 
 
 We can calculate the Value at Risk (VaR). We look at the 95% VaR, which is a measure of the magnitude of the loss at the 5% quantile of our P&L distribtuion. From our simulation results, the 5% quantile is approximately -4624. This means that in 95% of market scenarios, the total loss (hedging error) will not exceed 4624 EUR.
 
